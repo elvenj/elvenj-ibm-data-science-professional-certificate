@@ -1,90 +1,77 @@
 # IBM Data Science Professional Certificate
-#### IBM Data Science Professional Certificate | Python, SQL, Data Analysis, Visualization, Machine Learning, and SpaceX Capstone Project.
-Hands-on projects, notebooks, and technical deliverables developed as part of the **IBM Data Science Professional Certificate**.
 
-## Overview
+Practical notebooks, datasets, code, and reports developed through the **IBM Data Science Professional Certificate** on Coursera. This repository focuses on applying an end-to-end data science workflow, from data acquisition to predictive modeling and communication of results.
 
-This repository documents the application of data science methodologies, including:
+## Featured Project: SpaceX Falcon 9 Landing Prediction
 
-- Python for data analysis
-- Data collection using APIs and web scraping
-- Data wrangling and preprocessing
-- Exploratory Data Analysis (EDA)
-- SQL and relational databases
-- Data visualization with Matplotlib and Seaborn
-- Interactive maps with Folium
-- Interactive dashboards with Plotly Dash
-- Machine learning and predictive modeling
+**Objective:** Analyze historical SpaceX launch data and predict whether the Falcon 9 first stage will land successfully. The project combines data collection, exploratory analysis, interactive visualization, and supervised machine learning.
 
-## Applied Data Science Capstone
+## Project Workflow
 
-### SpaceX Falcon 9 — First Stage Landing Prediction
+| Stage | Methods and tools | Deliverable |
+| --- | --- | --- |
+| Data collection | SpaceX API, Python requests, web scraping | Source notebooks and collected datasets |
+| Data preparation | Pandas, missing-value handling, feature preparation | Cleaned datasets |
+| Exploratory analysis | SQL, Pandas, Matplotlib, Seaborn | Queries, tables, and visualizations |
+| Geospatial analysis | Folium | Interactive launch-site maps |
+| Interactive analytics | Plotly Dash | Dashboard with launch-site and payload filters |
+| Predictive analysis | Scikit-learn, cross-validation, GridSearchCV | Evaluated classification models |
+| Reporting | Technical slides and supporting results | Final PDF presentation |
 
-**Objective:** Analyze historical SpaceX launch data and develop machine learning models to predict the successful landing of Falcon 9 first-stage rockets.
-
-### Project Workflow
-
-1. Data Collection — SpaceX API and Web Scraping
-2. Data Wrangling — Cleaning and Feature Engineering
-3. Exploratory Data Analysis — SQL
-4. Exploratory Data Analysis — Visualization
-5. Interactive Maps — Folium
-6. Interactive Dashboard — Plotly Dash
-7. Predictive Analysis — Machine Learning
-8. Final Presentation — Results and Conclusions
-
-### Classification Algorithms
+### Predictive Models
 
 - Logistic Regression
 - Support Vector Machine (SVM)
 - Decision Tree
 - K-Nearest Neighbors (KNN)
 
-Hyperparameter optimization is performed using GridSearchCV with cross-validation.
+Models are compared using test-set accuracy and confusion matrices. Hyperparameters are selected through cross-validation with `GridSearchCV`.
 
 ## Repository Structure
 
-Planned organization:
+The initial Capstone layout is shown below. Additional labs and final deliverables will be added as they are prepared.
 
 ```text
-ibm-data-science-professional-certificate/
-│
+elvenj-ibm-data-science-professional-certificate/
 ├── README.md
 ├── LICENSE
-│
+├── .gitignore
 └── applied-data-science-capstone/
     ├── notebooks/
-    │   ├── 01-data-collection-api.ipynb
-    │   ├── 02-web-scraping.ipynb
-    │   ├── 03-data-wrangling.ipynb
-    │   ├── 04-eda-sql.ipynb
-    │   ├── 05-eda-visualization.ipynb
-    │   ├── 06-folium-maps.ipynb
-    │   └── 07-machine-learning.ipynb
-    │
-    ├── dashboard/
-    │   └── spacex_dash_app.py
-    │
-    ├── data/
-    ├── figures/
-    │
-    └── presentation/
-        ├── spacex-capstone.pptx
-        └── spacex-capstone.pdf
+    │   ├── README.md
+    │   └── jupyter-labs-spacex-data-collection-api.ipynb
+    └── data/
+        └── dataset_part_1.csv
 ```
+
+Upcoming materials include the web-scraping and data-wrangling labs, SQL and visualization notebooks, Folium maps, a Plotly Dash application, classification results, and the final presentation.
 
 ## Technologies
 
-Python · Pandas · NumPy · SQL · Scikit-learn · Matplotlib · Seaborn · Folium · Plotly Dash · Jupyter Notebook
+**Python · Jupyter · Pandas · NumPy · SQL · Matplotlib · Seaborn · Folium · Plotly Dash · Scikit-learn · Git**
+
+## Getting Started
+
+```bash
+git clone https://github.com/elvenj/elvenj-ibm-data-science-professional-certificate.git
+cd elvenj-ibm-data-science-professional-certificate
+jupyter notebook
+```
+
+Open the notebooks under `applied-data-science-capstone/notebooks/`. Dependencies and data paths may vary across IBM labs; follow each notebook's setup instructions.
+
+## Data Provenance and Reproducibility
+
+The project uses historical SpaceX launch data and educational resources provided or referenced in the IBM Capstone labs. External API availability may change; saved datasets do not, by themselves, establish that a live API request succeeded. Methods and execution results should be interpreted from the corresponding notebooks.
 
 ## Project Status
 
-In progress — Capstone repository organization and final report preparation.
+**In progress.** The repository is being organized incrementally. Final metrics, visualizations, and conclusions will be published after the relevant notebook outputs are verified.
 
 ## Acknowledgments
 
-IBM Data Science Professional Certificate — Coursera.
+[IBM Data Science Professional Certificate — Coursera](https://www.coursera.org/professional-certificates/ibm-data-science)
 
 ## License
 
-Course materials and third-party datasets remain subject to their respective licenses. Original project code and documentation may be licensed separately.
+Original code and documentation are covered by the repository's [MIT License](LICENSE), where applicable. IBM course materials, external datasets, and third-party content retain their respective licenses and attribution requirements.
